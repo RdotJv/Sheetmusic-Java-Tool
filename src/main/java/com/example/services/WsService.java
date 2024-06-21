@@ -55,6 +55,7 @@ public class WsService {
         System.out.println(result);
 
         if(resultLinksEmpty){
+            driver.close();
             return new Object[] {result, resultLinksEmpty};
         }
         return new Object[] {result, resultLinksEmpty};
